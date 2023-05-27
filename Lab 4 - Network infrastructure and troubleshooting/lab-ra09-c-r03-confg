@@ -1,0 +1,145 @@
+
+!
+! Last configuration change at 08:56:47 UTC Tue May 9 2023
+!
+version 15.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname LAB-RA09-C-R03
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable secret 5 $1$D4Fb$SOeseQ84a/RJqMyQ5QHNt.
+!
+no aaa new-model
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip dhcp excluded-address 172.16.9.48 172.16.9.52
+!
+ip dhcp pool LAN-pool-40
+ network 172.16.9.48 255.255.255.240
+ default-router 172.16.9.49 
+!
+!
+!
+ip domain name pxl.be
+ip cef
+login block-for 120 attempts 3 within 60
+no ipv6 cef
+multilink bundle-name authenticated
+!
+cts logging verbose
+!
+!
+license udi pid CISCO1941/K9 sn FCZ2137B0H9
+!
+!
+username admin privilege 15 secret 5 $1$tbgo$3XKgqgS0TOJD1sMYAVP9c0
+username cisco password 7 1511070D1739
+!
+redundancy
+!
+!
+ip tftp source-interface GigabitEthernet0/0.10
+ip ssh version 2
+!
+!
+!
+!
+interface Embedded-Service-Engine0/0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0.10
+ description Management vlan subinterface
+ encapsulation dot1Q 10
+ ip address 172.16.9.4 255.255.255.240
+ standby version 2
+ standby 10 ip 172.16.9.1
+ standby 10 priority 150
+!
+interface GigabitEthernet0/0.40
+ description Data vlan subinterface
+ encapsulation dot1Q 40
+ ip address 172.16.9.52 255.255.255.240
+ standby version 2
+ standby 40 ip 172.16.9.49
+ standby 40 priority 150
+!
+interface GigabitEthernet0/1
+ ip address 10.199.66.109 255.255.255.224
+ duplex auto
+ speed auto
+!
+interface Serial0/1/0
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+interface Serial0/1/1
+ no ip address
+ shutdown
+ clock rate 2000000
+!
+router ospf 10
+ router-id 9.9.9.9
+ passive-interface GigabitEthernet0/0
+ network 10.199.66.96 0.0.0.31 area 0
+ network 172.16.9.0 0.0.0.15 area 0
+ network 172.16.9.48 0.0.0.15 area 0
+!
+ip forward-protocol nd
+!
+no ip http server
+no ip http secure-server
+!
+ip route 0.0.0.0 0.0.0.0 10.199.66.100
+!
+!
+!
+!
+!
+control-plane
+!
+!
+banner motd Unauthorized access is prohibited
+!
+line con 0
+ password 7 110A1016141D
+line aux 0
+line 2
+ no activation-character
+ no exec
+ transport preferred none
+ transport output pad telnet rlogin lapb-ta mop udptn v120 ssh
+ stopbits 1
+line vty 0 4
+ exec-timeout 0 0
+ login local
+ transport input ssh
+line vty 5 15
+ exec-timeout 0 0
+ login local
+ transport input ssh
+!
+scheduler allocate 20000 1000
+!
+end

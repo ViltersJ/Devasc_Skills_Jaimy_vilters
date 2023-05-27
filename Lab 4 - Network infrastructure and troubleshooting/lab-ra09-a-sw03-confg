@@ -1,0 +1,234 @@
+
+!
+! Last configuration change at 00:33:14 UTC Mon Mar 1 1993
+!
+version 15.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname LAB-RA09-A-SW03
+!
+boot-start-marker
+boot-end-marker
+!
+enable secret 5 $1$DFQc$BvXWjJTbHXZrvH4HSD/jV1
+!
+username cisco password 7 1511070D1739
+username jeff password 7 045802150C2E
+no aaa new-model
+system mtu routing 1500
+!
+!
+!
+!
+!
+!
+!
+ip domain-name pxl.be
+!
+!
+crypto pki trustpoint TP-self-signed-1836608768
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-1836608768
+ revocation-check none
+ rsakeypair TP-self-signed-1836608768
+!
+!
+crypto pki certificate chain TP-self-signed-1836608768
+ certificate self-signed 01
+  3082022B 30820194 A0030201 02020101 300D0609 2A864886 F70D0101 05050030 
+  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 31383336 36303837 3638301E 170D3933 30333031 30303032 
+  33335A17 0D323030 31303130 30303030 305A3031 312F302D 06035504 03132649 
+  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D31 38333636 
+  30383736 3830819F 300D0609 2A864886 F70D0101 01050003 818D0030 81890281 
+  8100AF1A 25AEF751 526F78AA 9045B53D C26E52E8 2037A04C DEE06578 F076964F 
+  6CEDC497 49C88FDE E2DBEC61 BC791321 60293170 37CE22A2 2DD4AE0F 3C847995 
+  D79DFF73 50F116EA 46511602 6BD9D38F C1FF2736 B0486999 745EEEB0 38B4DED8 
+  D50BB0D2 D4A23AA1 49704519 4509095E 3B164DF3 F160D86E 4489EEB5 228F1652 
+  EDE30203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF 301F0603 
+  551D2304 18301680 14B4D7C5 92C4EF80 66E0C4A4 36ABE1BF 0ACE104C DD301D06 
+  03551D0E 04160414 B4D7C592 C4EF8066 E0C4A436 ABE1BF0A CE104CDD 300D0609 
+  2A864886 F70D0101 05050003 8181005D DE001646 C3C6545B 6958F3D2 D2688BA2 
+  23FCFB2D D2B0E401 08753721 5947CE44 5BDE3122 E3FCEABB 5AA0F5FC 86B3A1C7 
+  2B7E3ECD 6CA62E64 31389C83 70DD3063 0C6D6A20 027009C4 FAED39D0 DB8E016D 
+  3D6A1FCA 61BC41D7 E70E5755 0926E7EB B8CCB955 92FCE5CE D840C496 5BCE69A8 
+  1310DB69 E5767369 B470396A 08657D
+  	quit
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/1
+ switchport access vlan 40
+ switchport mode access
+ switchport port-security mac-address sticky
+ switchport port-security
+ spanning-tree portfast
+!
+interface FastEthernet0/2
+ switchport access vlan 99
+ switchport mode access
+ switchport port-security mac-address sticky
+ switchport port-security
+ shutdown
+ spanning-tree portfast
+!
+interface FastEthernet0/3
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/4
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/5
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/6
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/7
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/8
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/9
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/10
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/11
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/12
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/13
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/14
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/15
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/16
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/17
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/18
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/19
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/20
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/21
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/22
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/23
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface FastEthernet0/24
+ switchport access vlan 99
+ switchport mode access
+ shutdown
+!
+interface GigabitEthernet0/1
+ description connectie router LAB-RA09-C-R03
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,40
+ switchport mode trunk
+!
+interface GigabitEthernet0/2
+ shutdown
+!
+interface Vlan1
+ no ip address
+!
+interface Vlan10
+ description "Management Segment Student Rack 09"
+ ip address 172.16.9.7 255.255.255.240
+!
+interface Vlan40
+ description Data 
+ no ip address
+!
+ip default-gateway 172.16.9.1
+ip http server
+ip http secure-server
+ip ssh version 2
+!
+!
+banner motd Unauthorized access is prohibited
+!
+line con 0
+ password 7 030752180500
+line vty 0 4
+ password 7 045802150C2E
+ login local
+ transport input ssh
+line vty 5 15
+ password 7 045802150C2E
+ login local
+ transport input ssh
+!
+end
