@@ -125,9 +125,13 @@ script:
 ![location.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%201%20-%20Python%20Experiments/location.py)
 
 ##### Visual studio code:
+![Lab 1 Python Experiments](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%201%20-%20Python%20Experiments/Lab%201%20screen%2014.png)
 
 ##### Python3:
+![Lab 1 Python Experiments](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%201%20-%20Python%20Experiments/Lab%201%20screen%2015.png)
 
 ##### Python idle:
+![Lab 1 Python Experiments](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%201%20-%20Python%20Experiments/Lab%201%20screen%2016.png)
 
 ##### Jupyter:
+![Lab 1 Python Experiments](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%201%20-%20Python%20Experiments/Lab%201%20screen%2017.png)
