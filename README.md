@@ -369,6 +369,15 @@ script:
 
 #### Task Verification.
 
+##### XML
+![Lab 5 - Software development and design content](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%205%20-%20Software%20development%20and%20design%20content/Lab%205%20screen%202.png)
+
+##### JSON
+![Lab 5 - Software development and design content](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%205%20-%20Software%20development%20and%20design%20content/Lab%205%20screen%203.png)
+
+##### YAML
+![Lab 5 - Software development and design content](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%205%20-%20Software%20development%20and%20design%20content/Lab%205%20screen%204.png)
+
 ## Lab 6 - Python Network automation with netmiko
 
 ## Lab 7 - YANG, NETCONFIG and RESTCONFIG
