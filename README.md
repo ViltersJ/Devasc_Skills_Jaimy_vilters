@@ -30,7 +30,7 @@ pip install jupyterlab
 pip install notebook
 ```
 
-###### Python idle:
+##### Python idle:
 Install met:
 `sudo apt install idle3`
 
