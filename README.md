@@ -282,12 +282,78 @@ Oorzaak: Bug door exec-timeout.
 
 Oplossing: Exec timeout uitzetten.
 
-
 #### Task Verification.
 ![Router config](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/lab-ra09-c-r03-confg)
 ![Switch config](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/lab-ra09-a-sw03-confg)
 
 ## Lab 5 - Software Development and Design Content
+
+### Part 1: Software Version Control with Git Cisco DEVNET 3.3.11
+
+#### Task preparation and implementation.
+
+##### 1. Check de installatie van git
+Commando: `git --version`
+
+##### 2. Initiatie git
+Commandos:
+```
+git config --global user.name "username"
+git config --global user.email "email"
+cd Devasc-Skills (map waar de repository moet gemaakt worden)
+git init
+```
+
+##### 3. Staging en committing een file in de repository
+Commandos:
+```
+echo test > test.txt
+git add test.txt
+git commit -m "message zoals added screenshot"
+```
+
+##### 4.	File aanpassen en de verandering tracken.
+Commandos:
+```
+echo "voorbeeld tekst" >> test.txt
+git add test.txt
+git commit -m "added a line"
+```
+
+##### 5.	Branches en merging
+Commandos:
+```
+git branch 'branchname'
+git checkout 'branchname'
+git merge 'branchname'
+got brand -d 'branchname' (delete branch)
+```
+##### 6.	Integreren van git met GitHub
+Commandos:
+```
+git remode add origin "hyperlink naar online repository"
+git push remote origin master
+```
+na het laatste commando geef je de username van github en personal access token.
+
+#### Task Troubleshooting.
+
+git push werkt niet meer met password.
+Hiervoor is nu een Personal Acces token nodig
+
+#### Task Verification.
+Deze git
+
+### Part 2: Create a Python Unit Test Cisco DEVNET 3.5.7
+/
+
+### Part 3: Parse Different Data Types with Python Cisco DEVNET 3.6.6
+
+#### Task preparation and implementation.
+
+#### Task Troubleshooting.
+
+#### Task Verification.
 
 ## Lab 6 - Python Network automation with netmiko
 
