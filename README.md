@@ -144,15 +144,115 @@ script:
 
 #### Task preparation and implementation.
 
-##### 1.	Install, configure and test the network infrastructure based on the network drawing
+##### 1.	Install, configure and test the network infrastructure based on the network drawing.
+![Lab 4 - Network infrastructure and troubleshooting](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/Lab%204%20screen%201.png)
 
-##### 2.	Proactively determine what is needed to ensure the continuity of the system and network infrastructure
+##### 2.	Proactively determine what is needed to ensure the continuity of the system and network infrastructure.
+HSRP is geconfigureerd voor redundantie te kunnen opbouwen. Dit voorziet scalability.
+Commandos:
+```
+interface g0/0.10
+description Management vlan subinterface
+encapsulation dot1q 10
+ip address 172.16.9.4 255.255.255.240
+standby version 2
+standby 10 ip 172.16.9.1
+standby 10 priority 150
+exit
+interface g0/0.40
+description Data vlan subinterface
+encapsulation dot1q 40
+ip address 172.16.9.52 255.255.255.240
+standby version 2
+standby 40 ip 172.16.9.49
+standby 40 priority 150
+exit
+```
 
-##### 3.	Apply best practices to configuration and network security
+Domain commando: `ip domain name pxl.be`
 
-##### 4.	Draw up an IP plan and document your solution
+##### 3.	Apply best practices to configuration and network security.
+VLANS best practice segmentatie op switch.
+Commandos switch:
+```
+vlan 10
+name "Management Segment Student Rack 09"
+exit
+vlan 40
+name "Data Users Segment Student Rack 09"
+exit
+vlan 99
+name native
+exit
+```
 
-##### 5.	Make sure you can backup and restore device configuration from a backup environment
+SSH 2.0.
+Commandos:
+```
+crypto key generate rsa 1024
+ip ssh version 2
+username cisco password class
+```
+
+Alle ongebruikte poorten zijn gesloten met het commando: `no shutdown`.
+
+Op user ports is het commando `switchport port-security mac-address sticky` gebruikt.
+
+
+##### 4.	Draw up an IP plan and document your solution.
+
+| DEVICE          | INTERFACE   | IP            | VLAN |
+|-----------------|-------------|---------------|------|
+| LAB-RA09-C-R03  | G0/0.10     | 172.16.9.4    | 10   |
+|                 | G0/0.10HSRP | 172.16.9.1    | 10   |
+|                 | G0/0.40     | 172.16.9.52   | 40   |
+|                 | G0/0.40HSRP | 172.16.9.49   | 40   |
+|                 | G0/1        | 10.199.66.109 | /    |
+| LAB-RA09-A-SW03 | VLAN10      | 172.16.9.7    | 10   |
+
+##### 5.	Make sure you can backup and restore device configuration from a backup environment.
+Router eerst.
+Commandos:
+```
+en
+conf t
+interface g0/1
+ip address 10.199.66.109 255.255.255.224
+no shutdown
+exit
+ip route 0.0.0.0 0.0.0.0 10.199.66.100
+copy tftp: running-config
+10.199.64.134
+lab-ra09-c-r03-confg
+interface g0/1
+no shutdown
+interface g0/0
+no shutdown
+```
+Switch second
+Commandos:
+```
+en
+conf t
+vlan 10
+name "Management Segment Student Rack 09"
+exit
+interface vlan 10
+description "Management Segment Student Rack 09"
+ip address 172.16.9.7 255.255.255.240
+no shutdown
+exit
+ip default-gateway 172.16.9.1
+interface g0/1
+switchport mode trunk
+switchport trunk allowed vlan 10
+switchport trunk native vlan 99
+no shutdown
+exit
+copy tftp: running-config
+10.199.64.134
+lab-ra09-c-r03-confg
+```
 
 #### Task Troubleshooting.
 
@@ -184,6 +284,8 @@ Oplossing: Exec timeout uitzetten.
 
 
 #### Task Verification.
+![Router config](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/lab-ra09-c-r03-confg)
+![Switch config](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/lab-ra09-a-sw03-confg)
 
 ## Lab 5 - Software Development and Design Content
 
