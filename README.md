@@ -342,6 +342,7 @@ git push werkt niet meer met password.
 Hiervoor is nu een Personal Acces token nodig
 
 #### Task Verification.
+![Lab 5 - Software development and design content](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%205%20-%20Software%20development%20and%20design%20content/Lab%205%20screen%201.png)
 Deze git
 
 ### Part 2: Create a Python Unit Test Cisco DEVNET 3.5.7
