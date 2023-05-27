@@ -352,7 +352,20 @@ Deze git
 
 #### Task preparation and implementation.
 
+##### Parse XML in python.
+script:
+![parsexml.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%205%20-%20Software%20development%20and%20design%20content/parsexml.py)
+
+##### Parse JSON in python
+script:
+![parsejson.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%205%20-%20Software%20development%20and%20design%20content/parsejson.py)
+
+##### Parse YAML in python
+script:
+![parseyaml.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%205%20-%20Software%20development%20and%20design%20content/parseyaml.py)
+
 #### Task Troubleshooting.
+/
 
 #### Task Verification.
 
