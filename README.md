@@ -42,4 +42,18 @@ sudo apt upgrade
 ```
 
 #### Task Verification.
-![lab 1 Python Experiments](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%201%20-%20Python%20Experiments/Lab%201%20screen%201.png)
+
+##### Python3:
+![Lab 1 Python Experiments](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%201%20-%20Python%20Experiments/Lab%201%20screen%201.png)
+
+###### Pip:
+![Lab 1 Python Experiments](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%201%20-%20Python%20Experiments/Lab%201%20screen%202.png)
+
+###### Visual studio code:
+![Lab 1 Python Experiments](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%201%20-%20Python%20Experiments/Lab%201%20screen%203.png)
+
+###### Jupyter notebook
+![Lab 1 Python Experiments](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%201%20-%20Python%20Experiments/Lab%201%20screen%204.png)
+
+###### Python Idle
+![Lab 1 Python Experiments](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%201%20-%20Python%20Experiments/Lab%201%20screen%205.png)
