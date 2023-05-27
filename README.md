@@ -42,3 +42,4 @@ sudo apt upgrade
 ```
 
 #### Task Verification.
+![lab 1 Python Experiments](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%201%20-%20Python%20Experiments/Lab%201%20screen%201.png)
