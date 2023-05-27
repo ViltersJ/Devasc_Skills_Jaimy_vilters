@@ -8,7 +8,7 @@
 - Jupyter Notebook
 - Python IDLE
 
-#### Task preparation and implementation
+#### Task preparation and implementation.
 
 ##### Python3:
 Pre installed in de devasc machine
@@ -57,3 +57,62 @@ sudo apt upgrade
 
 ##### Python Idle:
 ![Lab 1 Python Experiments](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%201%20-%20Python%20Experiments/Lab%201%20screen%205.png)
+
+
+### 1.2 Run geopy and timedate Python Scipts on the DEVASC-LABVM using the tools above (1.1):
+
+#### Task preparation and implementation.
+
+download python scripts van de volgende link:
+https://github.com/wleppens/PythonExperiments/tree/main/mixed
+- timedate.py
+- geopy-geocoders_location.py
+- location.py
+
+##### timedate.py:
+commando voor repositories en dependencies:
+`pip install datetime`
+
+##### geopy-geocoders_location.py:
+commando's voor repositories en dependencies:
+```
+pip install geopy
+pip install folium
+pip install nominatim
+```
+##### location.py:
+Dezelfde dependencies als vorig script
+
+#### Task Troubleshooting.
+/
+
+#### Task Verification.
+
+##### timedate.py:
+script:
+
+##### Visual studio code:
+
+##### Python3:
+
+##### Python idle:
+
+##### Jupyter:
+
+##### geopy-geocoders_location.py:
+##### Visual studio code:
+
+##### Python3:
+
+##### Python idle:
+
+##### Jupyter:
+
+##### location.py:
+##### Visual studio code:
+
+##### Python3:
+
+##### Python idle:
+
+##### Jupyter:
