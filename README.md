@@ -136,11 +136,36 @@ script:
 ##### Jupyter:
 ![Lab 1 Python Experiments](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%201%20-%20Python%20Experiments/Lab%201%20screen%2017.png)
 
-## Lab 2 - Explore Rest APIs With API Simulator And Postman 
+## Lab 2 - Explore Rest APIs With API Simulator And Postman.
 
-## Lab 3 - Python Review - Development tools and Classes
+### Part 1: Explore API Documentation Using the API Simulator.
 
-## Lab 4 - Network Infrastructure and troubleshooting
+#### Task preparation and implementation.
+Surf naar: http://library.demo.local/
+
+#### Task Troubleshooting.
+
+#### Task Verification.
+
+### Part 2: Use Postman to Make API Calls to the API Simulator.
+
+#### Task preparation and implementation.
+
+#### Task Troubleshooting.
+
+#### Task Verification.
+
+### Part 3: Use Python to Add 100 Books to the API Simulator.
+
+#### Task preparation and implementation.
+
+#### Task Troubleshooting.
+
+#### Task Verification.
+
+## Lab 3 - Python Review - Development tools and Classes.
+
+## Lab 4 - Network Infrastructure and troubleshooting.
 
 #### Task preparation and implementation.
 
