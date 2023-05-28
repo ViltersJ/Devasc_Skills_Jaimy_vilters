@@ -260,12 +260,15 @@ gebruikt
 #### Task Verification.
 
 Faker: 
+
 ![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2017.png)
 
 For loop:
+
 ![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2018.png)
 
 Script run:
+
 ![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2020.png)
 ![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2021.png)
 
