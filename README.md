@@ -837,16 +837,16 @@ Python script schrijven voor een PUT request te senden.
 /
 #### Task Verification.
 
-Get request 1 success
+Get request 1 success:
 
 ![Lab 7 - NETCONFIG and YANG](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/Lab7%20screen%202.png)
 
-Get request 2 success
+Get request 2 success:
 
 ![Lab 7 - NETCONFIG and YANG](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/Lab7%20screen%203.png)
 
 
-put request success
+Put request success:
 
 ![Lab 7 - NETCONFIG and YANG](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/Lab%207%20screen%204.png)
 
