@@ -823,7 +823,7 @@ De get request 1 gaat naar https://192.168.139.128/restconf/data/ietf-interfaces
 Verifieer de auth tab.
 
 Add twee headers in de header tab.
-"Screen 1"
+![Lab 7 - NETCONFIG and YANG](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/Lab7%20screen%201.png)
 
 Get request 2 naar https://192.168.139.128/restconf/data/ietf-interfaces:interfaces/interface=GIgabitEthernet1
 
@@ -838,16 +838,27 @@ Python script schrijven voor een PUT request te senden.
 #### Task Verification.
 
 Get request 1 success
-Zie lab 7 screen 2
+
+![Lab 7 - NETCONFIG and YANG](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/Lab7%20screen%202.png)
 
 Get request 2 success
-Zie lab 7 screen 3
+
+![Lab 7 - NETCONFIG and YANG](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/Lab7%20screen%203.png)
+
 
 put request success
-zie lab 7 screen 4
 
-Python get request script
+![Lab 7 - NETCONFIG and YANG](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/Lab%207%20screen%204.png)
 
-Python Put request script
-en screen 5
+
+Python get request script:
+
+![restconf-get.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/Restconf-get.py)
+
+Python Put request script:
+
+![restconf-put.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/restconf-put.py)
+
+![Lab 7 - NETCONFIG and YANG](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/Lab%207%20screen%205.png)
+
 
