@@ -227,7 +227,7 @@ We kunnen deze ook sorten op auteur als volgt:
 
 #### Task preparation and implementation.
 Voor dit onderdeel is er een script geschreven.
-"add script 1"
+![add100RandomBooks.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/add100RandomBooks.py)
 Voor delen te snappen van dit script zijn er kleine opdrachten uitgevoerd.
 Voor faker ziet dit er als volgt uit.
 ```
