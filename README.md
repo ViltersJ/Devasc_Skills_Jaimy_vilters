@@ -405,7 +405,7 @@ definieer een class met methods
 
 functie: "mycity.py"
 
-method script:
+method script:"myLocation.py"
 
 ## Lab 4 - Network Infrastructure and troubleshooting.
 
