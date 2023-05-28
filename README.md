@@ -63,18 +63,18 @@ sudo apt upgrade
 
 #### Task preparation and implementation.
 
-download python scripts van de volgende link:
+Download python scripts van de volgende link:
 https://github.com/wleppens/PythonExperiments/tree/main/mixed
 - timedate.py
 - geopy-geocoders_location.py
 - location.py
 
 ##### timedate.py:
-commando voor repositories en dependencies:
+Commando voor repositories en dependencies:
 `pip install datetime`
 
 ##### geopy-geocoders_location.py:
-commando's voor repositories en dependencies:
+Commando's voor repositories en dependencies:
 ```
 pip install geopy
 pip install folium
@@ -89,7 +89,7 @@ Dezelfde dependencies als vorig script
 #### Task Verification.
 
 ##### timedate.py:
-script:
+Script:
 ![import-datetime.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%201%20-%20Python%20Experiments/import-datetime.py)
 
 ##### Visual studio code:
@@ -105,7 +105,7 @@ script:
 ![Lab 1 Python Experiments](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%201%20-%20Python%20Experiments/Lab%201%20screen%209.png)
 
 ##### geopy-geocoders_location.py:
-script:
+Script:
 ![geopy-geocoders_location.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%201%20-%20Python%20Experiments/Geopy-geocoders_location.py)
 
 ##### Visual studio code:
@@ -121,7 +121,7 @@ script:
 ![Lab 1 Python Experiments](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%201%20-%20Python%20Experiments/Lab%201%20screen%2013.png)
 
 ##### location.py:
-script:
+Script:
 ![location.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%201%20-%20Python%20Experiments/location.py)
 
 ##### Visual studio code:
@@ -147,7 +147,7 @@ Surf naar: http://library.demo.local/
 API request voor de lijst van boeken op te halen
 
 ##### POST /LoginViaBasic
-inloggen voor de rest te kunnen doen
+Inloggen voor de rest te kunnen doen
 
 ##### POST /books
 Deze word gedaan voor een book te adden naar de website.
@@ -333,22 +333,22 @@ bool
 List:
 `testlijst=["1", "2", "3"]`
 
-personalinfo script:
+Personalinfo script:
 ![Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%203.png)
 
-if-vlan script:
+If-vlan script:
 ![Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%204.png)
 
-elif script:
+Elif script:
 ![Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%205.png)
 
-for script:
+For script:
 ![Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%206.png)
 
-while script:
+While script:
 ![Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%207.png)
 
-file-access script:
+File-access script:
 ![Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%208.png)
 
 ### Part 2: Explore Python Development Tools Cisco DEVNET 3.1.12
@@ -395,17 +395,17 @@ deactivate
 
 #### Task preparation and implementation.
 
-definieer een functie.
+Definieer een functie.
 
-definieer een class met methods.
+Definieer een class met methods.
 
 #### Task Troubleshooting.
 /
 #### Task Verification.
 
-functie: !["mycity.py"](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/myCity.py)
+Functie: !["mycity.py"](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/myCity.py)
 
-method script:!["myLocation.py"](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/myLocation.py)
+Method script:!["myLocation.py"](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/myLocation.py)
 
 ## Lab 4 - Network Infrastructure and troubleshooting.
 
@@ -601,11 +601,11 @@ Commandos:
 git remode add origin "hyperlink naar online repository"
 git push remote origin master
 ```
-na het laatste commando geef je de username van github en personal access token.
+Na het laatste commando geef je de username van github en personal access token.
 
 #### Task Troubleshooting.
 
-git push werkt niet meer met password.
+Git push werkt niet meer met password.
 Hiervoor is nu een Personal Acces token nodig
 
 #### Task Verification.
@@ -620,15 +620,15 @@ Deze git
 #### Task preparation and implementation.
 
 ##### Parse XML in python.
-script:
+Script:
 ![parsexml.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%205%20-%20Software%20development%20and%20design%20content/parsexml.py)
 
 ##### Parse JSON in python
-script:
+Script:
 ![parsejson.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%205%20-%20Software%20development%20and%20design%20content/parsejson.py)
 
 ##### Parse YAML in python
-script:
+Script:
 ![parseyaml.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%205%20-%20Software%20development%20and%20design%20content/parseyaml.py)
 
 #### Task Troubleshooting.
@@ -742,7 +742,7 @@ Er was een probleem met de OVA deze kwam niet met een geupdate ISO. Dit is verho
 Ping het IP van de CSR1000v vanaf de DEVASC VM:
 `ping 192.168.139.128`
 
-ssh naar de switch vanaf de DEVASC VM:
+Ssh naar de switch vanaf de DEVASC VM:
 ` ssh cisco@192.168.139.128 `
 
 ### Part 2: Explore YANG Models Cisco DEVNET 8.3.5
@@ -860,5 +860,3 @@ Python Put request script:
 ![restconf-put.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/restconf-put.py)
 
 ![Lab 7 - NETCONFIG and YANG](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/Lab%207%20screen%205.png)
-
-
