@@ -395,9 +395,9 @@ deactivate
 
 #### Task preparation and implementation.
 
-definieer een functie
+definieer een functie.
 
-definieer een class met methods
+definieer een class met methods.
 
 #### Task Troubleshooting.
 /
@@ -651,15 +651,15 @@ script:
 
 #### Task preparation and implementation.
 
-Schrijf een script voor single show command
+Schrijf een script voor single show command.
 
-Schrijf een script voor multiple show commands
+Schrijf een script voor multiple show commands.
 
-Schrijf een script voor multiple configuration commands to a single device
+Schrijf een script voor multiple configuration commands to a single device.
 
 #### Task Troubleshooting.
 
-Er was een probleem met authenticatie;
+Er was een probleem met authenticatie.
 Hier is er voor elk script een nieuwe module gedownload genaamd getpass.
 
 #### Task Verification.
@@ -674,28 +674,28 @@ Hier is er voor elk script een nieuwe module gedownload genaamd getpass.
 
 #### Task preparation and implementation.
 
-Schrijf een send show commands to multiple devices
+Schrijf een send show commands to multiple devices.
 
-Schrijf een send configuration commands to multiple devices
+Schrijf een send configuration commands to multiple devices.
 
-Schrijf een run show commands and save the output
+Schrijf een run show commands and save the output.
 
-Schrijf een backup the device configurations
+Schrijf een backup the device configurations.
 
-Schrijf een configure a subset of Interfaces
+Schrijf een configure a subset of Interfaces.
 
-Schrijf een send device configuration using an external file
+Schrijf een send device configuration using an external file.
 
-Schrijf een connect using a Python Dictionary
+Schrijf een connect using a Python Dictionary.
 
-Schrijf een execute a script with a Function or classes
+Schrijf een execute a script with a Function or classes.
 
-Schrijf een execute a script with a statements (if, ifelse, else)
+Schrijf een execute a script with a statements (if, ifelse, else).
 
 
 #### Task Troubleshooting.
 
-Er was een probleem met authenticatie;
+Er was een probleem met authenticatie.
 Hier is er voor elk script een nieuwe module gedownload genaamd getpass.
 
 #### Task Verification.
@@ -721,6 +721,89 @@ Hier is er voor elk script een nieuwe module gedownload genaamd getpass.
 
 
 ## Lab 7 - YANG, NETCONFIG and RESTCONFIG
+
+### Part 1: Install the CSR1000v VM Cisco DEVNET 7.0.3
+
+#### Task preparation and implementation.
+
+Download de OVA.
+
+Download de nieuwste ISO.
+
+Mount de ISO in dvd drive 1 van de VM.
+
+Doorga de installatie procedure van de CSR1000v.
+
+#### Task Troubleshooting.
+
+Er was een probleem met de OVA deze kwam niet met een geupdate ISO. Dit is verholpen met een geupdate ISO van de lector.
+
+#### Task Verification.
+
+Ping het IP van de CSR1000v vanaf de DEVASC VM:
+`ping 192.168.139.128`
+
+ssh naar de switch vanaf de DEVASC VM:
+` ssh cisco@192.168.139.128 `
+
+### Part 2: Explore YANG Models Cisco DEVNET 8.3.5
+
+#### Task preparation and implementation.
+
+`wget de raw ietf-interfaces.yang` van github
+
+Ga u installatie van pyang na met: `pyang -v`
+Of install het met: `pip3 install pyang --upgrade`
+
+#### Task Troubleshooting.
+
+/
+
+#### Task Verification.
+
+"script ietf-interface.yang"
+
+### Part 3: Use NETCONF to Access an IOS XE Device cisco DEVNET 8.3.6
+
+#### Task preparation and implementation.
+
+Verifieer connectie door ping van DEVASC naar CSR1000v VM.
+`ssh cisco@192.168.139.128`
+
+`show platform software yang-management process` als verificatie of de netconfig daemon runt.
+
+Als de daemon niet zou runnen:
+```
+conf t 
+netconf-yang 
+```
+
+Open een SSH connectie naar de netconf process zelf met:
+`ssh cisco@192.168.139.128 -p 830 -s netconf`
+
+Stuur de volgende XML code naar de VM in de gestarte SSH naar de netconf.
+"Zie hello.xml"
+
+Voor info over de interfaces kan je de volgende XML Get code sturen.
+"Zie get.xml"
+
+Voor de sessie te eindigen gebruik de volgende xml.
+"Zie close.xml"
+
+Vervolgens is er een python script gemaakt voor requests te sturen en configuratie opdrachten.
+
+#### Task Troubleshooting.
+
+Na de get request zal de VM reageren met een onleesbare string.
+
+Deze onleesbare string is verholpen met pretify xml internet tool kopieer de string op “]]>]]>” na en laat deze in een leesbaar formaat zetten.
+
+#### Task Verification.
+
+Python script: 
+"Script"
+
+### Part 4: Use RESTCONF to Access an IOS XE Device cisco DEVNET 8.3.7
 
 #### Task preparation and implementation.
 
