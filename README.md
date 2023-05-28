@@ -161,6 +161,7 @@ Een get voor een specifiek boek te opvragen.
 Delete een book uit de lijst.
 
 #### Task Troubleshooting.
+/
 
 #### Task Verification.
 
@@ -188,10 +189,39 @@ curl `curl -X DELETE "http://library.demo.local/api/v1/books/5" -H "accept: appl
 ### Part 2: Use Postman to Make API Calls to the API Simulator.
 
 #### Task preparation and implementation.
+Open postman en herhaal de stappen hierboven.
+
+##### POST loginviabasic
+Vul de authority tab in als volgt.
+"Screenshot 10"
+dit geeft alweer de token die nodig is voor de rest te kunnen uitvoeren.
+
+##### POST books
+Vul de authorization tab in type API key:
+"Screenshot 12"
+De code die als input wordt gestuurd verandert iets:
+"Screenshot 13"
+
+##### GET /books
+We kunnen deze ook sorten op auteur als volgt:
+"screenshot 15"
 
 #### Task Troubleshooting.
+/
 
 #### Task Verification.
+
+##### GET books
+"screenshot 9"
+
+##### POST loginviabasic
+"screenshot 11"
+
+##### POST books
+"Screenshot 14"
+
+##### GET /books
+"Screenshot 16"
 
 ### Part 3: Use Python to Add 100 Books to the API Simulator.
 
