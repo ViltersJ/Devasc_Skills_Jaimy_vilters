@@ -249,7 +249,7 @@ Run het script
 Voor de faker commandos was er een probleem de variabelen moesten gezocht worden.
 `fake.`
 Als je twee keer tabt krijg je de volgende output:
-"Screen 19"
+![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2019.png)
 Hiervoor zijn:
 ```
 fake.catch_phrase()
@@ -260,14 +260,14 @@ gebruikt
 #### Task Verification.
 
 Faker: 
-"screenshot 17"
+![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2017.png)
 
 For loop:
-"screenshot 18"
+![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2018.png)
 
 Script run:
-"screenshot 20"
-"screenshot 21"
+![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2020.png)
+![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2021.png)
 
 
 ## Lab 3 - Python Review - Development tools and Classes.
