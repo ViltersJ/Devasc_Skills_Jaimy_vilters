@@ -174,6 +174,7 @@ Delete een book uit de lijst.
 [Lab 2 - screen 1]([https://github.com/ViltersJ/Devasc_Skills_JV/tree/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%201.png)
 
 curl commando `curl -X GET "http://library.demo.local/api/v1/books" -H "accept: application/json"`
+
 ##### POST /LoginViaBasic
 [Lab 2 - screen 2](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%202.png)
 
@@ -183,6 +184,7 @@ curl commando `curl -X GET "http://library.demo.local/api/v1/books" -H "accept: 
 
 ##### POST /books
 [Lab 2 - screen 6](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%206.png)
+
 curl voor 5de boek `curl -X POST "http://library.demo.local/api/v1/books" -H "accept: application/json" -H "X-API-KEY: cisco|Ujk15vEJPGys6ZxkKpDCCnMaKH5L5miN5h1Sh1Qq2B8" -H "Content-Type: application/json" -d "{ \"id\": 5, \"title\": \"31 Days Before Your CCNA Exam\", \"author\": \"Allan Johnson\"}"`
 
 ##### GET /books/{id}
@@ -219,7 +221,7 @@ De code die als input wordt gestuurd verandert iets:
 
 ##### GET /books
 We kunnen deze ook sorten op auteur als volgt:
-[Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2015.png)
+[Lab 2 - screen 15](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2015.png)
 
 #### Task Troubleshooting.
 /
@@ -227,23 +229,26 @@ We kunnen deze ook sorten op auteur als volgt:
 #### Task Verification.
 
 ##### GET books
-[Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%209.png)
+[Lab 2 - screen 9](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%209.png)
 
 ##### POST loginviabasic
-[Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2011.png)
+[Lab 2 - screen 11](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2011.png)
 
 ##### POST books
-[Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2014.png)
+[Lab 2 - screen 14](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2014.png)
 
 ##### GET /books
-[Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2016.png)
+[Lab 2 - screen 16](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2016.png)
 
 ### Part 3: Use Python to Add 100 Books to the API Simulator.
 
 #### Task preparation and implementation.
 Voor dit onderdeel is er een script geschreven.
+
 [add100RandomBooks.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/add100RandomBooks.py)
+
 Voor delen te snappen van dit script zijn er kleine opdrachten uitgevoerd.
+
 Voor faker ziet dit er als volgt uit.
 ```
 python3
@@ -252,19 +257,25 @@ fake = Faker()
 print('My name is {}.'.format(fake.name()))
 print('My name is {0} and i wrote {1} ({2})'.format(fake.name(),fake.catch_phrase(),fake.isbn13()))
 ```
+
 De for loop:
 ```
 for i in range (10):
     print(fake.name())
 ```
 Dit zal 10 namen genereren.
+
 Run het script
 
 #### Task Troubleshooting.
 Voor de faker commandos was er een probleem de variabelen moesten gezocht worden.
+
 `fake.`
+
 Als je twee keer tabt krijg je de volgende output:
-[Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2019.png)
+
+[Lab 2 - screen 19](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2019.png)
+
 Hiervoor zijn:
 ```
 fake.catch_phrase()
@@ -276,16 +287,17 @@ gebruikt
 
 Faker: 
 
-[Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2017.png)
+[Lab 2 - screen 17](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2017.png)
 
 For loop:
 
-[Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2018.png)
+[Lab 2 - screen 18](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2018.png)
 
 Script run:
 
-[Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2020.png)
-[Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2021.png)
+[Lab 2 - screen 20](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2020.png)
+
+[Lab 2 - screen 21](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2021.png)
 
 
 ## Lab 3 - Python Review - Development tools and Classes.
@@ -299,28 +311,36 @@ Versie verification `python3 -v`
 Interpreter: `python3`
 
 Hello world script: 
+
 [script Hello world.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Hello-world.py)
 
 Personal info script:
+
 [Script personalinfo.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/personal-info.py)
 
 If script:
+
 [if-vlan.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/if-vlan.py)
 
 Elif script:
+
 [if-acl.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/if-acl.py)
 
 For script:
+
 [for script](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/for.py)
 
 While script:
+
 [while script](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/while.py)
 
 File-access:
+
 [file-access script](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/file-access.py)
 
 #### Task Troubleshooting.
 /
+
 #### Task Verification.
 
 Gebruik de interpreter als calculator:
@@ -332,10 +352,12 @@ python3
 20/5
 3**2
 ```
-[Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%201.png)
+
+[Lab 3 - screen 1](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%201.png)
 
 Hello world:
-[Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%202.png)
+
+[Lab 3 - Python review - screen 2](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%202.png)
 
 Types:
 ```
@@ -349,22 +371,28 @@ List:
 `testlijst=["1", "2", "3"]`
 
 Personalinfo script:
-[Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%203.png)
+
+[Lab 3 - screen 3](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%203.png)
 
 If-vlan script:
-[Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%204.png)
+
+[Lab 3 - screen 4](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%204.png)
 
 Elif script:
-[Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%205.png)
+
+[Lab 3 - screen 5](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%205.png)
 
 For script:
-[Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%206.png)
+
+[Lab 3 - screen 6](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%206.png)
 
 While script:
-[Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%207.png)
+
+[Lab 3 - screen 7](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%207.png)
 
 File-access script:
-[Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%208.png)
+
+[Lab 3 - screen 8](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%208.png)
 
 ### Part 2: Explore Python Development Tools Cisco DEVNET 3.1.12
 
@@ -391,6 +419,7 @@ pip3 install requests
 pip3 freeze
 deactivate
 ```
+
 Een environment sharen en nieuwe aanmaken aan de hand van de share:
 ```
 cd /labs/devnet-src/python
@@ -418,19 +447,24 @@ Definieer een class met methods.
 /
 #### Task Verification.
 
-Functie: ["mycity.py"](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/myCity.py)
+Functie: 
 
-Method script:["myLocation.py"](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/myLocation.py)
+["mycity.py"](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/myCity.py)
+
+Method script:
+
+["myLocation.py"](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/myLocation.py)
 
 ## Lab 4 - Network Infrastructure and troubleshooting.
 
 #### Task preparation and implementation.
 
 ##### 1.	Install, configure and test the network infrastructure based on the network drawing.
-[Lab 4 - Network infrastructure and troubleshooting](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/Lab%204%20screen%201.png)
+[Lab 4 - screen 1](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/Lab%204%20screen%201.png)
 
 ##### 2.	Proactively determine what is needed to ensure the continuity of the system and network infrastructure.
 HSRP is geconfigureerd voor redundantie te kunnen opbouwen. Dit voorziet scalability.
+
 Commandos:
 ```
 interface g0/0.10
@@ -454,7 +488,9 @@ exit
 Domain commando: `ip domain name pxl.be`
 
 ##### 3.	Apply best practices to configuration and network security.
+
 VLANS best practice segmentatie op switch.
+
 Commandos switch:
 ```
 vlan 10
@@ -469,6 +505,7 @@ exit
 ```
 
 SSH 2.0.
+
 Commandos:
 ```
 crypto key generate rsa 1024
@@ -493,7 +530,9 @@ Op user ports is het commando `switchport port-security mac-address sticky` gebr
 | LAB-RA09-A-SW03 | VLAN10      | 172.16.9.7    | 10   |
 
 ##### 5.	Make sure you can backup and restore device configuration from a backup environment.
+
 Router eerst.
+
 Commandos:
 ```
 en
@@ -511,7 +550,9 @@ no shutdown
 interface g0/0
 no shutdown
 ```
+
 Switch second
+
 Commandos:
 ```
 en
@@ -549,7 +590,9 @@ Probleem 2: Er kon geen ping of TFTP verzonden worden van de router naar de remo
 Oorzaak: origineel was er een routing probleem die het 10.199.66.X netwerk niet door routen.
 
 Oplossing:  Router laten pingen via zijn subinterface dus met gebruik van VLAN ip adres.
+
 Het commando: `ip tftp source-interface gigabitEthernet 0/0.10` 
+
 heeft er voor gezorgd dat wij TFTP altijd vanaf ons Vlan IP adres doen.
 
 Probleem 3: We hadden geen connectivity meer zonder dat er iets veranderd was aan onze configs.
@@ -565,7 +608,9 @@ Oorzaak: Bug door exec-timeout.
 Oplossing: Exec timeout uitzetten.
 
 #### Task Verification.
+
 [Router config](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/lab-ra09-c-r03-confg)
+
 [Switch config](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%204%20-%20Network%20infrastructure%20and%20troubleshooting/lab-ra09-a-sw03-confg)
 
 ## Lab 5 - Software Development and Design Content
@@ -575,9 +620,11 @@ Oplossing: Exec timeout uitzetten.
 #### Task preparation and implementation.
 
 ##### 1. Check de installatie van git
+
 Commando: `git --version`
 
 ##### 2. Initiatie git
+
 Commandos:
 ```
 git config --global user.name "username"
@@ -587,6 +634,7 @@ git init
 ```
 
 ##### 3. Staging en committing een file in de repository
+
 Commandos:
 ```
 echo test > test.txt
@@ -595,6 +643,7 @@ git commit -m "message zoals added screenshot"
 ```
 
 ##### 4.	File aanpassen en de verandering tracken.
+
 Commandos:
 ```
 echo "voorbeeld tekst" >> test.txt
@@ -603,6 +652,7 @@ git commit -m "added a line"
 ```
 
 ##### 5.	Branches en merging
+
 Commandos:
 ```
 git branch 'branchname'
@@ -611,6 +661,7 @@ git merge 'branchname'
 got brand -d 'branchname' (delete branch)
 ```
 ##### 6.	Integreren van git met GitHub
+
 Commandos:
 ```
 git remode add origin "hyperlink naar online repository"
@@ -621,10 +672,12 @@ Na het laatste commando geef je de username van github en personal access token.
 #### Task Troubleshooting.
 
 Git push werkt niet meer met password.
+
 Hiervoor is nu een Personal Acces token nodig
 
 #### Task Verification.
-[Lab 5 - Software development and design content](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%205%20-%20Software%20development%20and%20design%20content/Lab%205%20screen%201.png)
+[Lab 5 - screen 1](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%205%20-%20Software%20development%20and%20design%20content/Lab%205%20screen%201.png)
+
 Deze git
 
 ### Part 2: Create a Python Unit Test Cisco DEVNET 3.5.7
@@ -636,14 +689,17 @@ Deze git
 
 ##### Parse XML in python.
 Script:
+
 [parsexml.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%205%20-%20Software%20development%20and%20design%20content/parsexml.py)
 
 ##### Parse JSON in python
 Script:
+
 [parsejson.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%205%20-%20Software%20development%20and%20design%20content/parsejson.py)
 
 ##### Parse YAML in python
 Script:
+
 [parseyaml.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%205%20-%20Software%20development%20and%20design%20content/parseyaml.py)
 
 #### Task Troubleshooting.
@@ -652,13 +708,16 @@ Script:
 #### Task Verification.
 
 ##### XML
-[Lab 5 - Software development and design content](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%205%20-%20Software%20development%20and%20design%20content/Lab%205%20screen%202.png)
+
+[Lab 5 - screen 2](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%205%20-%20Software%20development%20and%20design%20content/Lab%205%20screen%202.png)
 
 ##### JSON
-[Lab 5 - Software development and design content](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%205%20-%20Software%20development%20and%20design%20content/Lab%205%20screen%203.png)
+
+[Lab 5 - screen 3](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%205%20-%20Software%20development%20and%20design%20content/Lab%205%20screen%203.png)
 
 ##### YAML
-[Lab 5 - Software development and design content](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%205%20-%20Software%20development%20and%20design%20content/Lab%205%20screen%204.png)
+
+[Lab 5 - screen 4](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%205%20-%20Software%20development%20and%20design%20content/Lab%205%20screen%204.png)
 
 ## Lab 6 - Python Network automation with netmiko
 
@@ -675,6 +734,7 @@ Schrijf een script voor multiple configuration commands to a single device.
 #### Task Troubleshooting.
 
 Er was een probleem met authenticatie.
+
 Hier is er voor elk script een nieuwe module gedownload genaamd getpass.
 
 #### Task Verification.
@@ -711,6 +771,7 @@ Schrijf een execute a script with a statements (if, ifelse, else).
 #### Task Troubleshooting.
 
 Er was een probleem met authenticatie.
+
 Hier is er voor elk script een nieuwe module gedownload genaamd getpass.
 
 #### Task Verification.
@@ -838,7 +899,7 @@ De get request 1 gaat naar https://192.168.139.128/restconf/data/ietf-interfaces
 Verifieer de auth tab.
 
 Add twee headers in de header tab.
-[Lab 7 - NETCONFIG and YANG](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/Lab7%20screen%201.png)
+[Lab 7 - screen 1](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/Lab7%20screen%201.png)
 
 Get request 2 naar https://192.168.139.128/restconf/data/ietf-interfaces:interfaces/interface=GIgabitEthernet1
 
@@ -854,16 +915,16 @@ Python script schrijven voor een PUT request te senden.
 
 Get request 1 success:
 
-[Lab 7 - NETCONFIG and YANG](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/Lab7%20screen%202.png)
+[Lab 7 - screen 2](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/Lab7%20screen%202.png)
 
 Get request 2 success:
 
-[Lab 7 - NETCONFIG and YANG](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/Lab7%20screen%203.png)
+[Lab 7 - screen 3](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/Lab7%20screen%203.png)
 
 
 Put request success:
 
-[Lab 7 - NETCONFIG and YANG](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/Lab%207%20screen%204.png)
+[Lab 7 - screen 4](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/Lab%207%20screen%204.png)
 
 
 Python get request script:
@@ -874,4 +935,4 @@ Python Put request script:
 
 ![restconf-put.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/restconf-put.py)
 
-![Lab 7 - NETCONFIG and YANG](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/Lab%207%20screen%205.png)
+![Lab 7 - screen 5](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/Lab%207%20screen%205.png)
