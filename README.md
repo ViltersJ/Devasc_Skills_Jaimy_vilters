@@ -226,10 +226,49 @@ We kunnen deze ook sorten op auteur als volgt:
 ### Part 3: Use Python to Add 100 Books to the API Simulator.
 
 #### Task preparation and implementation.
+Voor dit onderdeel is er een script geschreven.
+"add script 1"
+Voor delen te snappen van dit script zijn er kleine opdrachten uitgevoerd.
+Voor faker ziet dit er als volgt uit.
+```
+python3
+from faker import Faker
+fake = Faker()
+print('My name is {}.'.format(fake.name()))
+print('My name is {0} and i wrote {1} ({2})'.format(fake.name(),fake.catch_phrase(),fake.isbn13()))
+```
+de for loop:
+```
+for i in range (10):
+    print(fake.name())
+```
+Dit zal 10 namen genereren.
+Run het script
 
 #### Task Troubleshooting.
-
+Voor de faker commandos was er een probleem de variabelen moesten gezocht worden.
+`fake.`
+Als je twee keer tabt krijg je de volgende output:
+"Screen 19"
+Hiervoor zijn:
+```
+fake.catch_phrase()
+fake.isbn13()
+fake.name()
+```
+gebruikt
 #### Task Verification.
+
+Faker: 
+"screenshot 17"
+
+For loop:
+"screenshot 18"
+
+Script run:
+"screenshot 20"
+"screenshot 21"
+
 
 ## Lab 3 - Python Review - Development tools and Classes.
 
