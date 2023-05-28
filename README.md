@@ -403,9 +403,9 @@ definieer een class met methods
 /
 #### Task Verification.
 
-functie: "mycity.py"
+functie: !["mycity.py"](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/myCity.py)
 
-method script:"myLocation.py"
+method script:!["myLocation.py"](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/myLocation.py)
 
 ## Lab 4 - Network Infrastructure and troubleshooting.
 
