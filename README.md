@@ -647,4 +647,30 @@ script:
 
 ## Lab 6 - Python Network automation with netmiko
 
+### Part 1: connecting to a single iOS device
+
+#### Task preparation and implementation.
+
+Schrijf een script voor single show command
+Schrijf een script voor multiple show commands
+Schrijf een script voor multiple configuration commands to a single device
+
+#### Task Troubleshooting.
+Er was een probleem met authenticatie;
+Hier is er voor elk script een nieuwe module gedownload genaamd getpass.
+
+#### Task Verification.
+
+"script1"
+"script2"
+"script3"
+
+### Part 2: Connect to multiple IOS devices.
+
+#### Task preparation and implementation.
+
+#### Task Troubleshooting.
+
+#### Task Verification.
+
 ## Lab 7 - YANG, NETCONFIG and RESTCONFIG
