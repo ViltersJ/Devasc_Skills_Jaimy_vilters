@@ -286,22 +286,22 @@ Interpreter: `python3`
 Hello world script: 
 ![script Hello world.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Hello-world.py)
 
-personal info script:
+Personal info script:
 ![Script personalinfo.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/personal-info.py)
 
-if script:
+If script:
 ![if-vlan.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/if-vlan.py)
 
-elif script:
+Elif script:
 ![if-acl.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/if-acl.py)
 
-for script:
+For script:
 ![for script](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/for.py)
 
-while script:
+While script:
 ![while script](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/while.py)
 
-file-access:
+File-access:
 ![file-access script](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/file-access.py)
 
 #### Task Troubleshooting.
@@ -354,16 +354,58 @@ file-access script:
 ### Part 2: Explore Python Development Tools Cisco DEVNET 3.1.12
 
 #### Task preparation and implementation.
+Versie verification: `python3 -v`
+
+Check huidige paketten en de versie ervan installed: 
+```
+cd /labs/devnet-src/python
+python3 -m pip freeze
+python3 -m pip freeze | grep requests
+```
 
 #### Task Troubleshooting.
-
+/
 #### Task Verification.
+
+Starten van een virtual environment packages checken en installen vervolgens envi sluiten:
+```
+cd /labs/devnet-src/python
+source devfun/bin/activate
+pip3 freeze
+pip3 install requests
+pip3 freeze
+deactivate
+```
+Een environment sharen en nieuwe aanmaken aan de hand van de share:
+```
+cd /labs/devnet-src/python
+source devfun/bin/activate
+pip3 freeze > requirements.txt
+deactivate
+```
+```
+python3 -m venv nieuweenvi
+source nieuweenvi/bin/activate
+pip3 install -r requirements.txt
+pip3 freeze
+deactivate
+```
 
 ### Part 3: Explore Python Classes cisco DEVNET 3.4.6
 
 #### Task preparation and implementation.
 
+definieer een functie
+
+definieer een class met methods
+
 #### Task Troubleshooting.
+/
+#### Task Verification.
+
+functie: "mycity.py"
+
+method script:
 
 ## Lab 4 - Network Infrastructure and troubleshooting.
 
