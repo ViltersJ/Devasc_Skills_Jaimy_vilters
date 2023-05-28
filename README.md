@@ -143,9 +143,47 @@ script:
 #### Task preparation and implementation.
 Surf naar: http://library.demo.local/
 
+##### GET /books.
+API request voor de lijst van boeken op te halen
+
+##### POST /LoginViaBasic
+inloggen voor de rest te kunnen doen
+
+##### POST /books
+Deze word gedaan voor een book te adden naar de website.
+verander de value
+"screenshot 3"
+
+##### GET /books/{id}
+Een get voor een specifiek boek te opvragen.
+
+##### DELETE /books/{id}
+Delete een book uit de lijst.
+
 #### Task Troubleshooting.
 
 #### Task Verification.
+
+##### GET /books.
+"screenshot 1"
+curl commando `curl -X GET "http://library.demo.local/api/v1/books" -H "accept: application/json"`
+##### POST /LoginViaBasic
+"screenshot 2"
+"screenshot 4"
+"screenshot 5"
+
+##### POST /books
+"screenshot 6"
+curl voor 5de boek `curl -X POST "http://library.demo.local/api/v1/books" -H "accept: application/json" -H "X-API-KEY: cisco|Ujk15vEJPGys6ZxkKpDCCnMaKH5L5miN5h1Sh1Qq2B8" -H "Content-Type: application/json" -d "{ \"id\": 5, \"title\": \"31 Days Before Your CCNA Exam\", \"author\": \"Allan Johnson\"}"`
+
+##### GET /books/{id}
+"screenshot 7"
+curl `curl -X GET "http://library.demo.local/api/v1/books/4" -H "accept: application/json"`
+
+##### DELETE /books/{id}
+"screenshot 8"
+curl `curl -X DELETE "http://library.demo.local/api/v1/books/5" -H "accept: application/json" -H "X-API-KEY: cisco|Ujk15vEJPGys6ZxkKpDCCnMaKH5L5miN5h1Sh1Qq2B8"`
+
 
 ### Part 2: Use Postman to Make API Calls to the API Simulator.
 
