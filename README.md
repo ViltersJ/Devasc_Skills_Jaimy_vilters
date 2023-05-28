@@ -193,18 +193,18 @@ Open postman en herhaal de stappen hierboven.
 
 ##### POST loginviabasic
 Vul de authority tab in als volgt.
-"Screenshot 10"
-dit geeft alweer de token die nodig is voor de rest te kunnen uitvoeren.
+![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2010.png)
+Dit geeft alweer de token die nodig is voor de rest te kunnen uitvoeren.
 
 ##### POST books
 Vul de authorization tab in type API key:
-"Screenshot 12"
+![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2012.png)
 De code die als input wordt gestuurd verandert iets:
-"Screenshot 13"
+![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20Screen%2013.png)
 
 ##### GET /books
 We kunnen deze ook sorten op auteur als volgt:
-"screenshot 15"
+![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2015.png)
 
 #### Task Troubleshooting.
 /
@@ -212,16 +212,16 @@ We kunnen deze ook sorten op auteur als volgt:
 #### Task Verification.
 
 ##### GET books
-"screenshot 9"
+![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%209.png)
 
 ##### POST loginviabasic
-"screenshot 11"
+![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2011.png)
 
 ##### POST books
-"Screenshot 14"
+![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2014.png)
 
 ##### GET /books
-"Screenshot 16"
+![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%2016.png)
 
 ### Part 3: Use Python to Add 100 Books to the API Simulator.
 
