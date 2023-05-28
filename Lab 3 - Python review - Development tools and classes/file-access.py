@@ -1,0 +1,4 @@
+file=open("test.txt","r")
+for item in file:
+ print(item)
+file.close()
