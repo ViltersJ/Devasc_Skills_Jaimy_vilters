@@ -810,6 +810,44 @@ Python script:
 
 #### Task preparation and implementation.
 
-#### Task Troubleshooting.
+Verifieer of de juiste modules draaien op de switch.
 
+`show platform software yang-management process`
+
+Start een nieuw request in postman.
+
+In essentie ga je get requests sturen voor bepaalde configuraties te zien van interfaces.
+
+De get request 1 gaat naar https://192.168.139.128/restconf/data/ietf-interfaces:interfaces.
+
+Verifieer de auth tab.
+
+Add twee headers in de header tab.
+"Screen 1"
+
+Get request 2 naar https://192.168.139.128/restconf/data/ietf-interfaces:interfaces/interface=GIgabitEthernet1
+
+Vervolgens een put request naar https://192.168.139.128/restconf/data/ietf-interfaces:interfaces/interface=Loopback1
+
+Python script schrijven voor een GET request te senden.
+
+Python script schrijven voor een PUT request te senden.
+
+#### Task Troubleshooting.
+/
 #### Task Verification.
+
+Get request 1 success
+Zie lab 7 screen 2
+
+Get request 2 success
+Zie lab 7 screen 3
+
+put request success
+zie lab 7 screen 4
+
+Python get request script
+
+Python Put request script
+en screen 5
+
