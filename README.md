@@ -284,25 +284,25 @@ Versie verification `python3 -v`
 Interpreter: `python3`
 
 Hello world script: 
-"script Hello world.py"
+![script Hello world.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Hello-world.py)
 
 personal info script:
-"Script personalinfo.py"
+![Script personalinfo.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/personal-info.py)
 
 if script:
-"if-vlan.py"
+![if-vlan.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/if-vlan.py)
 
 elif script:
-"if-acl.py"
+![if-acl.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/if-acl.py)
 
 for script:
-"for script"
+![for script](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/for.py)
 
 while script:
-"while script"
+![while script](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/while.py)
 
 file-access:
-"file-access script"
+![file-access script](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/file-access.py)
 
 #### Task Troubleshooting.
 /
@@ -317,10 +317,10 @@ python3
 20/5
 3**2
 ```
-"Screen 1"
+![Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%201.png)
 
 Hello world:
-"screen 2"
+![Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%202.png)
 
 Types:
 ```
@@ -334,22 +334,22 @@ List:
 `testlijst=["1", "2", "3"]`
 
 personalinfo script:
-"Screen 3"
+![Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%203.png)
 
 if-vlan script:
-"screen 4"
+![Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%204.png)
 
 elif script:
-"screen 5"
+![Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%205.png)
 
 for script:
-"screen 6"
+![Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%206.png)
 
 while script:
-"screen 7"
+![Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%207.png)
 
 file-access script:
-"screen 8"
+![Lab 3 - Python review - Development tools and classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%203%20-%20Python%20review%20-%20Development%20tools%20and%20classes/Lab%203%20screen%208.png)
 
 ### Part 2: Explore Python Development Tools Cisco DEVNET 3.1.12
 
