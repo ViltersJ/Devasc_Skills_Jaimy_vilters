@@ -151,7 +151,7 @@ inloggen voor de rest te kunnen doen
 
 ##### POST /books
 Deze word gedaan voor een book te adden naar de website.
-verander de value
+Verander de value
 ![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%203.png)
 
 ##### GET /books/{id}
@@ -237,7 +237,7 @@ fake = Faker()
 print('My name is {}.'.format(fake.name()))
 print('My name is {0} and i wrote {1} ({2})'.format(fake.name(),fake.catch_phrase(),fake.isbn13()))
 ```
-de for loop:
+De for loop:
 ```
 for i in range (10):
     print(fake.name())
@@ -274,6 +274,96 @@ Script run:
 
 
 ## Lab 3 - Python Review - Development tools and Classes.
+
+### Part 1: Python Programming Review Cisco DEVNET 1.3.3
+
+#### Task preparation and implementation.
+
+Versie verification `python3 -v`
+
+Interpreter: `python3`
+
+Hello world script: 
+"script Hello world.py"
+
+personal info script:
+"Script personalinfo.py"
+
+if script:
+"if-vlan.py"
+
+elif script:
+"if-acl.py"
+
+for script:
+"for script"
+
+while script:
+"while script"
+
+file-access:
+"file-access script"
+
+#### Task Troubleshooting.
+/
+#### Task Verification.
+
+Gebruik de interpreter als calculator:
+```
+python3
+2+3
+10-4
+2*4
+20/5
+3**2
+```
+"Screen 1"
+
+Hello world:
+"screen 2"
+
+Types:
+```
+int
+float
+str
+bool
+```
+
+List:
+`testlijst=["1", "2", "3"]`
+
+personalinfo script:
+"Screen 3"
+
+if-vlan script:
+"screen 4"
+
+elif script:
+"screen 5"
+
+for script:
+"screen 6"
+
+while script:
+"screen 7"
+
+file-access script:
+"screen 8"
+
+### Part 2: Explore Python Development Tools Cisco DEVNET 3.1.12
+
+#### Task preparation and implementation.
+
+#### Task Troubleshooting.
+
+#### Task Verification.
+
+### Part 3: Explore Python Classes cisco DEVNET 3.4.6
+
+#### Task preparation and implementation.
+
+#### Task Troubleshooting.
 
 ## Lab 4 - Network Infrastructure and troubleshooting.
 
