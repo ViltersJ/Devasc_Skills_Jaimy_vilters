@@ -171,7 +171,7 @@ Delete een book uit de lijst.
 #### Task Verification.
 
 ##### GET /books.
-[Lab 2 ) screen 1](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%201.png)
+[Lab 2 - screen 1](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%201.png)
 
 curl commando `curl -X GET "http://library.demo.local/api/v1/books" -H "accept: application/json"`
 
