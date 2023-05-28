@@ -656,21 +656,47 @@ Schrijf een script voor multiple show commands
 Schrijf een script voor multiple configuration commands to a single device
 
 #### Task Troubleshooting.
+
 Er was een probleem met authenticatie;
 Hier is er voor elk script een nieuwe module gedownload genaamd getpass.
 
 #### Task Verification.
 
-"script1"
-"script2"
-"script3"
+![Single show](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/Netmiko%20Part1%20Sending%20single%20show%20command.py)
+![Multiple show](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/Netmiko%20Part1%20Sending%20multiple%20show%20commands.py)
+![Multiple config](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/Netmiko%20Part1%20Send%20multiple%20configuration%20commands%20to%20a%20single%20device.py)
 
 ### Part 2: Connect to multiple IOS devices.
+
+#### Task preparation and implementation.
+
+Schrijf een send show commands to multiple devices
+Schrijf een send configuration commands to multiple devices
+Schrijf een run show commands and save the output
+Schrijf een backup the device configurations
+Schrijf een configure a subset of Interfaces
+Schrijf een send device configuration using an external file
+Schrijf een connect using a Python Dictionary
+Schrijf een execute a script with a Function or classes
+Schrijf een execute a script with a statements (if, ifelse, else)
+
+#### Task Troubleshooting.
+
+Er was een probleem met authenticatie;
+Hier is er voor elk script een nieuwe module gedownload genaamd getpass.
+
+#### Task Verification.
+
+![show naar multiple](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/Netmiko%20Part2%20Send%20show%20commands%20to%20multiple%20devices.py)
+![config naar multiple](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/Netmiko%20Part2%20Send%20configuration%20commands%20to%20multiple%20devices.py)
+![run show en save de output](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/Netmiko%20Part2%20Run%20show%20commands%20and%20save%20the%20output.py)
+![backup device config](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/Netmiko%20Part2%20Backup%20the%20device%20configurations.py)
+
+
+## Lab 7 - YANG, NETCONFIG and RESTCONFIG
 
 #### Task preparation and implementation.
 
 #### Task Troubleshooting.
 
 #### Task Verification.
-
-## Lab 7 - YANG, NETCONFIG and RESTCONFIG
