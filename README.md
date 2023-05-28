@@ -691,6 +691,11 @@ Hier is er voor elk script een nieuwe module gedownload genaamd getpass.
 ![config naar multiple](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/Netmiko%20Part2%20Send%20configuration%20commands%20to%20multiple%20devices.py)
 ![run show en save de output](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/Netmiko%20Part2%20Run%20show%20commands%20and%20save%20the%20output.py)
 ![backup device config](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/Netmiko%20Part2%20Backup%20the%20device%20configurations.py)
+![Configure a subset of Interfaces](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/Netmiko%20Part%202%20Configure%20a%20subset%20of%20Interfaces.py)
+![Send device configuration using an external file](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/Netmiko%20Part%202%20Send%20device%20configuration%20using%20an%20external%20file.py)
+![Connect using a Python Dictionary](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/Netmiko%20Part%202%20Connect%20using%20a%20Python%20Dictionary.py)
+![Execute a script with a Function or classes](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/Netmiko%20part%202%20Execute%20a%20script%20with%20a%20Function%20or%20classes.py)
+![Execute a script with a statements (if, ifelse, else)](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/Netmiko%20part%202%20Execute%20a%20script%20with%20a%20statements%20(if%2C%20ifelse%2C%20else).py)
 
 
 ## Lab 7 - YANG, NETCONFIG and RESTCONFIG
