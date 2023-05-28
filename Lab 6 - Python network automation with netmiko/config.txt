@@ -1,0 +1,65 @@
+en
+conf t
+hostname LAB-RA09-C-SW03 
+enable secret cisco
+line console 0 
+password cisco
+exit
+username cisco password class
+banner motd #Unauthorized access is prohibited#
+line vty 0 4
+login local
+password cisco
+transport input ssh
+login
+exit
+login block-for 120 attempts 3 within 60
+line vty 0 4
+exec-timeout 1 30
+exit
+service password-encryption
+vlan 10
+name "Management Segment Student Rack 09"
+exit
+vlan 40
+name "Data Users Segment Student Rack 09"
+exit
+vlan 99
+name native
+exit
+interface vlan 10
+description "Management Segment Student Rack 09"
+ip address 172.16.9.7 255.255.255.240
+no shutdown 
+exit
+interface vlan 40
+description Data 
+exit
+ip default-gateway 172.16.9.1
+interface g0/1
+description connectie router LAB-RA09-C-R03
+switchport mode trunk
+switchport trunk allowed vlan 10,40
+switchport trunk native vlan 99
+no shutdown 
+exit
+interface range fa0/1-2
+switchport mode access
+switchport access vlan 40
+spanning-tree portfast
+switchport port-security
+switchport port-security mac-address sticky
+no shutdown
+exit
+interface range fa0/2-24
+switchport mode access
+switchport access vlan 99
+shutdown
+exit
+cdp run
+interface g0/1
+cdp enable
+exit
+interface g0/2
+shutdown
+exit
