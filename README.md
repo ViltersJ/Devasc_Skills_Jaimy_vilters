@@ -152,7 +152,7 @@ inloggen voor de rest te kunnen doen
 ##### POST /books
 Deze word gedaan voor een book te adden naar de website.
 verander de value
-"screenshot 3"
+![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%203.png)
 
 ##### GET /books/{id}
 Een get voor een specifiek boek te opvragen.
@@ -165,23 +165,23 @@ Delete een book uit de lijst.
 #### Task Verification.
 
 ##### GET /books.
-"screenshot 1"
+![Lab 2 - Explore rest APIs with API-simulator and postman]([https://github.com/ViltersJ/Devasc_Skills_JV/tree/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%201.png)
 curl commando `curl -X GET "http://library.demo.local/api/v1/books" -H "accept: application/json"`
 ##### POST /LoginViaBasic
-"screenshot 2"
-"screenshot 4"
+![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%202.png)
+![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%204.png)
 "screenshot 5"
 
 ##### POST /books
-"screenshot 6"
+![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%206.png)
 curl voor 5de boek `curl -X POST "http://library.demo.local/api/v1/books" -H "accept: application/json" -H "X-API-KEY: cisco|Ujk15vEJPGys6ZxkKpDCCnMaKH5L5miN5h1Sh1Qq2B8" -H "Content-Type: application/json" -d "{ \"id\": 5, \"title\": \"31 Days Before Your CCNA Exam\", \"author\": \"Allan Johnson\"}"`
 
 ##### GET /books/{id}
-"screenshot 7"
+![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%207.png)
 curl `curl -X GET "http://library.demo.local/api/v1/books/4" -H "accept: application/json"`
 
 ##### DELETE /books/{id}
-"screenshot 8"
+![Lab 2 - Explore rest APIs with API-simulator and postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/lab%202%20screen%208.png)
 curl `curl -X DELETE "http://library.demo.local/api/v1/books/5" -H "accept: application/json" -H "X-API-KEY: cisco|Ujk15vEJPGys6ZxkKpDCCnMaKH5L5miN5h1Sh1Qq2B8"`
 
 
