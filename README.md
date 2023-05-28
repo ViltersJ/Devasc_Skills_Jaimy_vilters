@@ -171,7 +171,7 @@ Delete een book uit de lijst.
 #### Task Verification.
 
 ##### GET /books.
-[Lab 2 - screen 1]([https://github.com/ViltersJ/Devasc_Skills_JV/tree/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%201.png)
+[Lab 2 - screen 1](https://github.com/ViltersJ/Devasc_Skills_JV/tree/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%202%20-%20Explore%20rest%20APIs%20with%20API-simulator%20and%20postman/Lab%202%20screen%201.png)
 
 curl commando `curl -X GET "http://library.demo.local/api/v1/books" -H "accept: application/json"`
 
@@ -899,6 +899,7 @@ De get request 1 gaat naar https://192.168.139.128/restconf/data/ietf-interfaces
 Verifieer de auth tab.
 
 Add twee headers in de header tab.
+
 [Lab 7 - screen 1](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/Lab7%20screen%201.png)
 
 Get request 2 naar https://192.168.139.128/restconf/data/ietf-interfaces:interfaces/interface=GIgabitEthernet1
