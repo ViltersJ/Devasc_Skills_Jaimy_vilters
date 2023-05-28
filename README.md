@@ -719,7 +719,6 @@ Hier is er voor elk script een nieuwe module gedownload genaamd getpass.
 ![Execute a script with a statements (if, ifelse, else)](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%206%20-%20Python%20network%20automation%20with%20netmiko/Netmiko%20part%202%20Execute%20a%20script%20with%20a%20statements%20(if%2C%20ifelse%2C%20else).py)
 
 
-
 ## Lab 7 - YANG, NETCONFIG and RESTCONFIG
 
 ### Part 1: Install the CSR1000v VM Cisco DEVNET 7.0.3
@@ -761,7 +760,7 @@ Of install het met: `pip3 install pyang --upgrade`
 
 #### Task Verification.
 
-"script ietf-interface.yang"
+!["script ietf-interface.yang"](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/ietf-interfaces.yang)
 
 ### Part 3: Use NETCONF to Access an IOS XE Device cisco DEVNET 8.3.6
 
@@ -782,13 +781,16 @@ Open een SSH connectie naar de netconf process zelf met:
 `ssh cisco@192.168.139.128 -p 830 -s netconf`
 
 Stuur de volgende XML code naar de VM in de gestarte SSH naar de netconf.
-"Zie hello.xml"
+
+![hello.xml](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/hello.xml)
 
 Voor info over de interfaces kan je de volgende XML Get code sturen.
-"Zie get.xml"
+
+![get.xml](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/get.xml)
 
 Voor de sessie te eindigen gebruik de volgende xml.
-"Zie close.xml"
+
+![close.xml](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/close.xml)
 
 Vervolgens is er een python script gemaakt voor requests te sturen en configuratie opdrachten.
 
@@ -801,7 +803,8 @@ Deze onleesbare string is verholpen met pretify xml internet tool kopieer de str
 #### Task Verification.
 
 Python script: 
-"Script"
+
+![ncclient-netconf.py](https://github.com/ViltersJ/Devasc_Skills_JV/blob/master/Lab%207%20-%20NETCONFIG%20and%20YANG/ncclient-netconf.py)
 
 ### Part 4: Use RESTCONF to Access an IOS XE Device cisco DEVNET 8.3.7
 
