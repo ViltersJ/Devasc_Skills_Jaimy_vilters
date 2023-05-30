@@ -577,7 +577,7 @@ no shutdown
 exit
 copy tftp: running-config
 10.199.64.134
-lab-ra09-c-r03-confg
+lab-ra09-a-sw03-confg
 ```
 
 #### Task Troubleshooting.
