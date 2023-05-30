@@ -728,11 +728,50 @@ Script:
 
 #### Task preparation and implementation.
 
+Voor deze scripts zijn er variabele voor geconfigureerd.
+
+```
+cisco1 = { 
+    "device_type": "cisco_ios",
+    "host": "172.16.9.7",
+    "username": "cisco",
+    "password": getpass()
+}
+``` 
+Deze dienen ingevuld te worden volgens de specificaties van u netwerk en device.
+
 Schrijf een script voor single show command.
+
+Hier wordt er een commando gedeclareerd en vervolgens geconnecteerd met het device en het commando door gestuurd.
+
+```
+command = "show ip int brief"
+
+with ConnectHandler(**cisco1) as net_connect:
+    output = net_connect.send_command(command)
+
+print(output)
+```
 
 Schrijf een script voor multiple show commands.
 
+Voor dit script wordt het commando gedeelte herhaalt.
+
 Schrijf een script voor multiple configuration commands to a single device.
+
+Bij dit is er een andere syntax gebruikt dit ziet er als volgt uit.
+
+```
+connection = ConnectHandler(**cisco1)
+connection.enable()
+
+commands = ['vlan 50', 'name testjv', 'exit']
+connection.send_config_set(commands)
+
+print('Uitgevoerd')
+connection.disconnect()
+```
+De send_config_set zorgt ervoor dat de op voorhand gedeclareerde commandos als configuratie worden doorgestuurd.
 
 #### Task Troubleshooting.
 
