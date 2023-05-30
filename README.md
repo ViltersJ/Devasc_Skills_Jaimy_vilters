@@ -546,6 +546,8 @@ exit
 copy tftp: running-config
 10.199.64.134
 lab-ra09-c-r03-confg
+
+conf t
 interface g0/1
 no shutdown
 interface g0/0
