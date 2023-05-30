@@ -791,23 +791,195 @@ Hier is er voor elk script een nieuwe module gedownload genaamd getpass.
 
 #### Task preparation and implementation.
 
+Zoals bij part 1 van dit labo wordt de device info eerst gedeclareert.
+
+```
+cisco1 = { 
+    "device_type": "cisco_ios",
+    "host": "172.16.9.7",
+    "username": "cisco",
+    "password": getpass()
+}
+cisco2 = { 
+    "device_type": "cisco_ios",
+    "host": "172.16.9.4",
+    "username": "cisco",
+    "password": getpass()
+}
+devices = [cisco1, cisco2]
+```
+
+Dit verschilt weer voor elke gebruiker maar we steken de info in een variabele zodat deze kan gebruikt worden later in het script.
+
 Schrijf een send show commands to multiple devices.
+
+Zelfde principe als in part 1 alleen hier wordt er een for loop aan toegekend zodat hij dit in dit geval 2 maal doorstuurt.
+
+```
+commands = ["show ip int brief","showint desc"]
+for device in devices:
+    net_connect = ConnectHandler(**device)
+    for command in commands:
+        output = net_connect.send_command(command)
+        print(output)
+
+    net_connect.disconnect()
+ ```
 
 Schrijf een send configuration commands to multiple devices.
 
+Hier ook hetzelfde principe maar dan als volgt.
+
+```
+commands = ['interface gig 0/1', 'description testjv']
+
+for device in devices:
+    connection = ConnectHandler(**device)
+    connection.enable()
+
+    output = connection.send_config_set(commands)
+    print(output)
+    print('uitgevoerd')
+
+    connection.disconnect()
+```
+
 Schrijf een run show commands and save the output.
+
+In deze configuratie wordt de for loop gebruikt die gebrukt is bij show commandos maar in deze for wordt er nog een for en een with gebruikt om de output in een tekst bestand te steken.
+
+```
+show_commands = ["show interface desc", "show ip interface brief"]
+for device in devices:
+    connection = ConnectHandler(**device)
+    connection.enable()
+
+    print(f"Device: {device['host']}")
+    for command in show_commands:
+        output = connection.send_command(command)
+        print(output)
+        print()
+
+        
+        filename = f"{device['host']}_output.txt"
+        with open(filename, "a") as file:
+            file.write(output)
+            file.write("\n")
+
+    connection.disconnect()show_commands = ["show interface desc", "show ip interface brief"]
+```
 
 Schrijf een backup the device configurations.
 
+Voor deze is het er in de for alleen een with gebruikt om de output van de `show running-config` op te slaan in een file.
+
+```
+for device in devices:
+    connection = ConnectHandler(**device)
+    print(f"Connected to {device['host']}")
+    
+    connection.enable()
+    output = connection.send_command("show run | include hostname")
+    hostname = output.split()[1]
+    
+    output = connection.send_command("show running-config")
+
+    filename = f"{hostname}_config.txt"
+    with open(filename, "w") as file:
+        file.write(output)
+    print(f"Configuration backup for {device['host']} saved as {filename}")
+
+    connection.disconnect()
+    print(f"Disconnected from {device['host']}")
+```
+
 Schrijf een configure a subset of Interfaces.
 
+Voor deze is er een extra variabele gedeclareerd namenlijk interfaces. 
+
+Deze variabele zal een aantal interfaces bevatten die worden bewerkt.
+
+```
+interfaces = ['GigabitEthernet0/0', 'GigabitEthernet0/1']
+
+config_commands = [
+    'interface ' + intf for intf in interfaces
+] + [
+    'ip address 172.168.8.4 255.255.255.0',
+    'no shutdown'
+]
+
+for device in devices:
+    connection = ConnectHandler(**device)
+    connection.enable()  # Enter enable mode (if applicable)
+    output = connection.send_config_set(config_commands)
+    print(output)
+    connection.disconnect()
+```
+
 Schrijf een send device configuration using an external file.
+
+Voor deze wordt er eerst een file met commandos gedeclareerd in een variabele deze wordt als volgt in een with gestoken voor te lezen en erna gebruikt in de for loop voor de config.
+
+```
+config_file = "config.txt"
+
+
+with open(config_file) as file:
+    config_commands = file.read().splitlines()
+
+
+for device in devices:
+    connection = ConnectHandler(**device)
+    connection.enable()  
+    output = connection.send_config_set(config_commands)
+    print(output)
+    connection.disconnect()
+ ```
 
 Schrijf een connect using a Python Dictionary.
 
 Schrijf een execute a script with a Function or classes.
 
+Hier zullen er functie declareerd worden die met de juiste configuratie andere scripten kunnen doorsturen.
+
+```
+def execute_script(device):
+    connection = ConnectHandler(**device)
+    print(f"Connected to {device['host']}!")
+    connection.disconnect()
+    print(f"Disconnected from {device['host']}!")
+
+for device in devices:
+    execute_script(device)
+ ```
+ 
+In de for wordt de functie toegepast in dit specifiek geval gaat het als output terug geven dat hij kan connecteren en zal dan vervolgens ook de hostname in de output zetten.
+
 Schrijf een execute a script with a statements (if, ifelse, else).
+
+Hier wordt de functie hergebruikt en zal deze in de if/else zeggen of de connectie succesvol is of niet.
+
+```
+def execute_script(device):
+    connection = ConnectHandler(**device)
+    print(f"Connected to {device['host']}!")
+
+    
+    if device['host'] == "172.16.9.7":
+        print("Executing script for cisco1...")
+    elif device['host'] == "172.16.9.4":
+        print("Executing script for cisco2...")
+    else:
+        print("Device not recognized. Skipping script execution.")
+    connection.disconnect()
+    print(f"Disconnected from {device['host']}!")
+
+for device in devices:
+    execute_script(device)
+ ```
+IP-adressen zullen verschillen van netwerk tot netwerk.
+
 
 
 #### Task Troubleshooting.
