@@ -542,6 +542,7 @@ ip address 10.199.66.109 255.255.255.224
 no shutdown
 exit
 ip route 0.0.0.0 0.0.0.0 10.199.66.100
+exit
 copy tftp: running-config
 10.199.64.134
 lab-ra09-c-r03-confg
