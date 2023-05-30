@@ -153,7 +153,7 @@ API request voor de lijst van boeken op te halen
 Inloggen voor de rest te kunnen doen
 
 ##### POST /books
-Deze word gedaan voor een book te adden naar de website.
+Deze wordt gedaan voor een book te adden naar de website.
 
 Verander de value
 
